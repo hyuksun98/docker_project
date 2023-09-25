@@ -3,7 +3,7 @@ services:
   raspberrypi4_arm64:
     build:
       dockerfile: .
-    image: includekhs/final:5.0
+    image: includekhs/final:6.0
     container_name: rpi4
     working_dir: /app/raspberrypi4
     command: python3 rpi_mqtt.py || true
@@ -13,7 +13,7 @@ services:
   orangepi0_armv7:
     build:
       dockerfile: .
-    image: includekhs/final:5.0
+    image: includekhs/final:6.0
     container_name: opi0
     working_dir: /app/orangepi0/DHT11-DHT22-Python-library-Orange-PI
     command: python3 opi_mqtt.py || true
