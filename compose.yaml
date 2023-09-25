@@ -2,7 +2,8 @@ version: '3.8'
 services:
   raspberrypi4_arm64:
     build:
-      dockerfile: .
+      context: .
+      dockerfile: Dockerfile
     image: includekhs/final:6.0
     container_name: rpi4
     working_dir: /app/raspberrypi4
@@ -12,12 +13,22 @@ services:
 
   orangepi0_armv7:
     build:
-      dockerfile: .
+      context: .
+      dockerfile: Dockerfile
     image: includekhs/final:6.0
     container_name: opi0
     working_dir: /app/orangepi0/DHT11-DHT22-Python-library-Orange-PI
     command: python3 opi_mqtt.py || true
     tty: true
     privileged: true
+
+  orangepi03_arm64:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: includekhs/final:6.0
+    container_name: opi03
+    working_dir: /app/orangepi03
+    command: python3 mqtt_broker.py || true
 
 
