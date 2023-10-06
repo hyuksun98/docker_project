@@ -25,8 +25,8 @@ Adafruit_DHT==1.4.0
 ## Raspberrypi 4
 To use the DHT sensor on Raspberry Pi 4, GPIO control is required. We used the Adafruit_DHT library for this purpose.
 
-- rpi_sensor.py reads temperature and humidity data from the sensor.
-- rpi_mqtt.py sends the temperature and humidity data read from the sensor to the MQTT broker (Orange Pi Zero 3) using the paho-mqtt library.
+- ```rpi_sensor.py``` reads temperature and humidity data from the sensor.
+- ```rpi_mqtt.py``` sends the temperature and humidity data read from the sensor to the MQTT broker (Orange Pi Zero 3) using the paho-mqtt library.
 
 Source code related to this can be easily found and implemented as there are various resources available.<br><br>
 
@@ -36,13 +36,13 @@ To use the DHT sensor on Orange Pi Zero, GPIO control is required. We used open-
 1. DHT22 sensor reference: https://github.com/jingl3s/DHT11-DHT22-Python-library-Orange-PI.git
 2. pyA20 reference: https://github.com/LinhDNguyen/orangepi_zero_gpio.git
 
-- opi_sensor.py reads temperature and humidity data from the sensor.
+- ```opi_sensor.py``` reads temperature and humidity data from the sensor.
   
-- rpi_mqtt.py sends the temperature and humidity data read from the sensor to the MQTT broker (Orange Pi Zero 3) using the paho-mqtt library.
+- ```rpi_mqtt.py``` sends the temperature and humidity data read from the sensor to the MQTT broker (Orange Pi Zero 3) using the paho-mqtt library.
   
-- /DHT11-DHT22-Python-library-Orange-PI/dht.py reads temperature and humidity data from the DHT22 sensor and contains helper functions for data validation.
+- ```/DHT11-DHT22-Python-library-Orange-PI/dht.py``` reads temperature and humidity data from the DHT22 sensor and contains helper functions for data validation.
 
-- /orangepi_zero_gpio is an installation file for the pyA20 library.
+- ```/orangepi_zero_gpio``` is an installation file for the pyA20 library.
 
 <br>
 
