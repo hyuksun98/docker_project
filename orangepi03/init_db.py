@@ -1,4 +1,4 @@
-import sqlit3
+import sqlite3
 import subprocess
 import os
 
