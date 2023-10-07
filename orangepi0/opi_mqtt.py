@@ -1,13 +1,14 @@
 from pyA20.gpio import gpio
 from pyA20.gpio import port
 
+import os
 import dht
 import time
 import datetime
 import paho.mqtt.client as mqtt
 
 MAX_ITER = 30
-broker_address = "192.168.200.136"
+broker_address = os.environ.get('BROKER','172.20.10.4')
 broker_port = 1883 # Default MQTT port
 
 # Initialize GPIO
