@@ -6,10 +6,8 @@ python3-setuptools \
 python3-dev \
 gcc \
 vim \
-git \
 net-tools \
-mosquitto \
-mosquitto-clients
+sqlite3
 
 RUN pip3 install Adafruit_DHT paho-mqtt
 
@@ -29,8 +27,3 @@ RUN mv -f opi_mqtt.py DHT11-DHT22-Python-library-Orange-PI
 EXPOSE 1883
 
 WORKDIR /app
-
-
-
-
-
