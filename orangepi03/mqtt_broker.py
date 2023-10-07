@@ -43,6 +43,10 @@ client.connect(broker_address, broker_port)
 for t in topics:
     client.subscribe(t)
 
-client.loop_forever()
-
-conn.close()
+try:
+    client.loop_forever()
+except KeyboardInterrupt:
+    print("The user terminated a program.")
+finally:
+    conn.close()
+    client.disconnect()
