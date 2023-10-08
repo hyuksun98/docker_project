@@ -19,8 +19,17 @@ Used Libraries:
 pyA20==0.2.1
 paho-mqtt==1.6.1
 Adafruit_DHT==1.4.0
+sqlite3=3.40.1
 ```
 <br>
+
+## Alert
+when you entered into container, you should set the environment variable which specify the mqtt broker ip address:
+
+- ```export BROKER={ip_address}```
+- add some layer ```ENV BROKER={ip_address}``` to Dockerfile
+
+<br><br>
 
 ## Raspberrypi 4
 To use the DHT sensor on Raspberry Pi 4, GPIO control is required. We used the Adafruit_DHT library for this purpose.
