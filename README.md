@@ -24,10 +24,10 @@ sqlite3=3.40.1
 <br>
 
 ## Alert
-when you entered into container, you should set the environment variable which specify the mqtt broker ip address:
+After you entered into container, you should set the environment variable which specify the mqtt broker ip address:
 
-- ```export BROKER={ip_address}```
-- add some layer ```ENV BROKER={ip_address}``` to Dockerfile
+- Setting ```export BROKER={ip_address}```
+- Add some layer ```ENV BROKER={ip_address}``` to Dockerfile
 
 <br><br>
 
