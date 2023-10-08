@@ -25,4 +25,7 @@ conn.close()
 
 print("Database initialization completed.")
 
-subprocess.run(["python3", "mqtt_broker.py"])
+try:
+  subprocess.run(["python3", "mqtt_broker.py"])
+except KeyboardInterrupt:
+  print("subprocess was terminated by user.")
