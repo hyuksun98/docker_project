@@ -31,7 +31,7 @@ After you entered into container, you should set the environment variable which 
 
 <br><br>
 
-## Raspberrypi 4
+## Raspberry pi 4
 To use the DHT sensor on Raspberry Pi 4, GPIO control is required. We used the Adafruit_DHT library for this purpose.
 
 - ```rpi_sensor.py``` reads temperature and humidity data from the sensor.
@@ -47,7 +47,7 @@ To use the DHT sensor on Orange Pi Zero, GPIO control is required. We used open-
 
 - ```opi_sensor.py``` reads temperature and humidity data from the sensor.
   
-- ```rpi_mqtt.py``` sends the temperature and humidity data read from the sensor to the MQTT broker (Orange Pi Zero 3) using the paho-mqtt library.
+- ```opi_mqtt.py``` sends the temperature and humidity data read from the sensor to the MQTT broker (Orange Pi Zero 3) using the paho-mqtt library.
   
 - ```/DHT11-DHT22-Python-library-Orange-PI/dht.py``` reads temperature and humidity data from the DHT22 sensor and contains helper functions for data validation.
 
@@ -55,5 +55,12 @@ To use the DHT sensor on Orange Pi Zero, GPIO control is required. We used open-
 
 <br>
 
-## Orangepi zero3
-Orange Pi Zero 3 functions as an MQTT broker and receives temperature/humidity data from Orange Pi Zero and Raspberry Pi 4.
+## Orangepi zero3 (UPDATED: 23/10/06)
+Orange Pi Zero 3 functions as an MQTT broker and receives temperature/humidity data from Orange Pi Zero and Raspberry Pi 4.<br>
+
+- ```mqtt_broker.py``` receives the temperature and humidity data from Orange pi Zero and Raspberry pi 4. <br><br>
+
+**UPDATED**: We have used ```sqlite3``` database library for using ```docker volume```. And we added ```init_db.py``` file which role is initializing the database configuration.
+
+**UPDATED**: Also, ```mqtt_broker.py``` has ```INSERT``` sql command to operate database
+
