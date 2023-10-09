@@ -1,0 +1,101 @@
+version: '3.8'
+services:
+  rpi40:
+    image: includekhs/final:6.0
+    container_name: rpi40
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi41:
+    image: includekhs/final:6.0
+    container_name: rpi41
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi42:
+    image: includekhs/final:6.0
+    container_name: rpi42
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi43:
+    image: includekhs/final:6.0
+    container_name: rpi43
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi44:
+    image: includekhs/final:6.0
+    container_name: rpi44
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi45:
+    image: includekhs/final:6.0
+    container_name: rpi4
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi46:
+    image: includekhs/final:6.0
+    container_name: rpi46
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi47:
+    image: includekhs/final:6.0
+    container_name: rpi47
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi48:
+    image: includekhs/final:6.0
+    container_name: rpi48
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
+
+  rpi49:
+    image: includekhs/final:6.0
+    container_name: rpi49
+    working_dir: /app/raspberrypi4
+    command: python3 rpi_mqtt.py
+    environment:
+      - BROKER=192.168.200.136
+    tty: true
+    privileged: true
