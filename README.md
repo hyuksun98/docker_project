@@ -7,7 +7,14 @@ We are building embedded system virtualization using Docker containers.
 
 We aim to implement a single Dockerfile script that is compatible with various hardware platforms, allowing applications to run in containers.
 
-Ultimately, we plan to present a prototype for open-source and embedded system virtualization.<br><br><br>
+Ultimately, we plan to present a prototype for open-source and embedded system virtualization.<br><br>
+
+We already pushed our own Docker Image on Docker Hub using ```docker buildx build``` command. You can pull the image:
+
+```
+docker pull includekhs/final:6.0
+```
+<br><br>
 Used IoT Devices (Orange Pi Zero, Raspberry Pi 4, Orange Pi Zero 3):
 
 - Raspberry Pi 4 (Broadcom BCM2711) $~$ : Sensor(DHT11) application, publisher
@@ -56,7 +63,7 @@ To use the DHT sensor on Orange Pi Zero, GPIO control is required. We used open-
 <br>
 
 ## Orangepi zero3 (UPDATED: 23/10/06)
-Orange Pi Zero 3 functions as an MQTT broker and receives temperature/humidity data from Orange Pi Zero and Raspberry Pi 4.<br>
+Orange Pi Zero 3 operates as an MQTT broker and receives temperature/humidity data from Orange Pi Zero and Raspberry Pi 4.<br>
 
 - ```mqtt_broker.py``` receives the temperature and humidity data from Orange pi Zero and Raspberry pi 4. <br><br>
 
