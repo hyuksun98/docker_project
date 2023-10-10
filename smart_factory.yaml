@@ -4,7 +4,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi40
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -14,7 +14,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi41
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -24,7 +24,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi42
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -34,7 +34,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi43
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -44,7 +44,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi44
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -54,7 +54,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi4
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -64,7 +64,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi46
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -74,7 +74,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi47
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -84,7 +84,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi48
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
@@ -94,7 +94,7 @@ services:
     image: includekhs/final:6.0
     container_name: rpi49
     working_dir: /app/raspberrypi4
-    command: python3 rpi_mqtt.py
+    command: python3 rpi_sensor.py
     environment:
       - BROKER=192.168.200.136
     tty: true
