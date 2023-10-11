@@ -1,7 +1,9 @@
 # 2nd KHU (Kyung Hee University) College of Electronics and Information Engineering Creative Innovation Project
 
 ### Team Name: My Life is NG(New Generation)
-### Contest Introduction: Container-Based Embedded System Virtualization
+### Contest Introduction: Container-Based Embedded System Virtualization<br><br>
+
+<p align="center"><img width="542" alt="KakaoTalk_20231009_164827855" src="https://github.com/includekhs/docker_project/assets/117493461/fe82280e-bfbc-455c-b1e9-6bfd7c23a9f9"></p>
 
 We are building embedded system virtualization using Docker containers.
 
